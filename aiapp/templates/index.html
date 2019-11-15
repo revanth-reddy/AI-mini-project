@@ -1,0 +1,75 @@
+<html style="overflow-x: hidden">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <title>Movie-Success-Prediction</title>
+    </head>
+<body>
+        <div class="row" style="margin-top: 5vh; text-align: center;">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8"><h2>Movie SuccessPrediction</h2><br><h4>AI Mini Project</h4></div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="row" style="margin-top: 5vh; margin-bottom: 5vh;">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="border-color: aqua;border-style: solid;border-radius: 1%;">
+                    <form style="padding: 5%;" method="POST">{% csrf_token %}
+                            <div class="form-group">
+                              <label for="actor_1_facebook_likes">Actor1 Facebook Likes</label>
+                              <input type="number" class="form-control" id="actor_1_facebook_likes" name="actor_1_facebook_likes" aria-describedby="act_1_Help" placeholder="Enter actor_1_facebook_likes">
+                              <small id="act_1_Help" class="form-text text-muted">Enter the facebook likes of actor1 which shows his/her popularity.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="actor_2_facebook_likes">Actor2 Facebook Likes</label>
+                                <input type="number" class="form-control" id="actor_2_facebook_likes" name="" aria-describedby="act_2_Help" placeholder="Enter actor_2_facebook_likes">
+                                <small id="act_2_Help" class="form-text text-muted">Enter the facebook likes of actor2 which shows his/her popularity.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="director_facebook_likes">Director Facebook Likes</label>
+                                <input type="number" class="form-control" id="director_facebook_likes" name="" aria-describedby="dir_Help" placeholder="Director Facebook Likes">
+                                <small id="dir_Help" class="form-text text-muted">Enter the facebook likes of Director which shows his/her popularity.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="movie_facebook_likes">Movie Facebook Likes</label>
+                                <input type="number" class="form-control" id="movie_facebook_likes" name="" aria-describedby="mov_Help" placeholder="Movie Facebook Likes">
+                                <small id="mov_Help" class="form-text text-muted">Enter the facebook likes of Movie which shows movie popularity.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="cast_facebook_likes">Cast Facebook Likes</label>
+                                <input type="number" class="form-control" id="cast_facebook_likes" name="" aria-describedby="cast_Help" placeholder="Movie Cast Facebook Likes">
+                                <small id="cast_Help" class="form-text text-muted">Enter the facebook likes of Movie Cast which shows movie popularity.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="movie_budget">Movie Budget</label>
+                                <input type="number" class="form-control" id="movie_budget" name="" aria-describedby="bud_Help" placeholder="Movie Budget">
+                                <small id="bud_Help" class="form-text text-muted">Enter the Movie Budget.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="num_critic_for_reviews">Number of Reviews by Critics</label>
+                                <input type="number" class="form-control" id="num_critic_for_reviews" name="" aria-describedby="crit_Help" placeholder="Num of Critic Reviews">
+                                <small id="crit_Help" class="form-text text-muted">Enter the Critics Reviews count.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="num_user_reviews">Number of Reviews by Users</label>
+                                <input type="number" class="form-control" id="num_user_reviews" name="" aria-describedby="user_Help" placeholder="Num of User Reviews">
+                                <small id="user_Help" class="form-text text-muted">Enter the User Reviews count.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="num_voted_users">Number of Votes by Users</label>
+                                <input type="number" class="form-control" id="num_voted_users" name="" aria-describedby="user_votes_Help" placeholder="Num of User Votes">
+                                <small id="user_votes_Help" class="form-text text-muted">Enter the User Votes count.</small>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" >Submit</button>
+                    </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+</body>
+</html>
